@@ -1,0 +1,19 @@
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' with (
+    $primary: #FFE1D1,
+    $secondary: #E0C0B8,
+    $border-width: 2px,
+    $font-family-base: 'Archivo Narrow',
+    $border-radius: 3px,
+    $headings-color: black,
+    $headings-font-family: 'Archivo Narrow',
+    $body-color: black,
+    $body-bg: #FFE1D1,
+    $grid-breakpoints: (
+    xs: 0,
+    sm: 550px,
+    md: 700px,
+    lg: 992px, 
+    xl: 1200px,
+    xxl: 1400px
+    )
+)

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="description" content="Magazinul CoffeeTeaRia ofera o selectie inedita de cafele si ceaiuri pentru gusturile fiecaruia!">
+        <meta name="keywords" content="cafea, ceai, magazin, shop, coffee, tea, store, magazin online, cafenea, București, CoffeeTeaRia">
+        <title>CoffeeTeaRia</title>
+        <%- include("../Fragmente/head.ejs")  %>
+        
+    </head>
+
+    <body>
+        <%- include("../Fragmente/header.ejs")  %>
+        <main>  
+            <h2>Pagină produs</h2>
+                <article id="art-produs">
+                    <h3><span class="nume"><%- locals.prod.nume %></span></h3>
+                    <p>Pret: <span class="pret"><%- locals.prod.pret %> </span></p>
+                    <p>Descriere: <span class="descriere"><%- locals.prod.descriere %> </span></p> 
+                    <p>Tip produs: <span class="calorii"><%- locals.prod.tip_produs %> </span></p>
+                    <p>Gramaj: <span class="gramaj"><%- locals.prod.gramaj %> </span></p>
+                    <p>Origine: <span class="origine"><%- locals.prod.origine %> </span></p>
+                    <p>Categorie: <span class="categorie"><%- locals.prod.categorie %> </span></p>
+                    <p>Cafeinizat: <span class="cafeinizat"><%- locals.prod.cafeinizat%> </span></p>
+                    <p>Data adăugare: <span class="categorie"><%- locals.prod.data_adaugare %> </span></p>
+                    <figure class="imag-produs">
+                        <img  src="/Resurse/Galerie/<%- locals.prod.imagine %>" alt="[imagine <%- locals.prod.nume %>]" />
+                    </figure>    
+                </article>
+            
+        
+        </main>
+    
+        <%- include("../Fragmente/footer.ejs")  %>
+    
+    </body>
+</html>

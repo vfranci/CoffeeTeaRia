@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="description" content="Magazinul CoffeeTeaRia ofer">
+        <meta name="keywords" content="cafea, ceai, magazin, shop, coffee, tea, store, magazin online, cafenea, București, CoffeeTeaRia">
+        <title>CoffeeTeaRia</title>
+        <%- include("../Fragmente/head.ejs")  %> <!--  '<' si % afiseaza; semnul - spune afiseaza outputul acestei functii -->
+        
+        
+    </head>
+
+    <body>
+        <%- include("../Fragmente/header.ejs")  %>
+        <main>   
+            <button id="tema">☼</button>
+            <section id="home">
+                <h2>Acasa</h2>
+                <div id="grid-pagina">
+                    <figure id="fig1"> 
+                        <picture>
+                            <source media="(max-width: 400px)" srcset="./Resurse/cafea.jpg">
+                            <source media="(max-width: 600px)" srcset="./Resurse/cafea.jpg">
+                            <source media="(max-width: 800px)" srcset="./Resurse/cafea.jpg">
+                            <img src="./Resurse/cafea.jpg" alt="imagine-prezentare" title="Imagine prezentare">
+                        </picture>
+                    </figure> 
+                    <section id="despre-noi">
+                        <h3>Despre noi</h3>
+                            <p>CoffeeTeaRia ofera o selectie variata de cafea, ceaiuri si accesorii pe 
+                                gustul fiecaruia, de la arome deosebite de cafea si pana la infuzii de ceai. Povestea noastra a incput in Bucuresti, 
+                                insa de atunci am reusit sa ne facem accesibili in toata tara.</p>
+                    </section>
+                    <section id="promotii">
+                        <span class="promo-container">
+                            <i class="fa-solid fa-fire fa-3x icon1"></i>
+                            <h3>Promotiile lunii</h3>
+                        </span>
+                            <p>In aceasta luna, avem promotii de pana la <s>10%</s> <ins
+                                style="font-weight:bold; text-decoration:none;">15%</ins> la toate sortimentele 
+                                de cafea capsule.</p>
+                            <strong>Atentie! Promotia este valabila intre zilele de 1 si 25 ale luni in curs!</strong>
+                    </section>
+                    <section id="blog">
+                        <h3>Blog</h3>
+                            <p>Aceasta sectiune prezinta articole despre cafea si ceai. Va invitam sa ne contactati 
+                                daca aveti alte curiozitati sau sugestii pentru blogul nostru!</p>
+                            <ol>
+                                <li>Retete de cafea
+                                    <div>
+                                        <p>Stim ca sunteti pasionati de cafea, asa ca am selectat pentru voi o carte online cu cele 
+                                            mai bune retete de bauturi pe baza de cafea pe care le puteti pregati chiar la voi acasa! Cartea se numeste
+                                            <i>The Coffee Recipe Book</i>, scrisa de Daniel Lancaster si o puteti descarca in format pdf
+                                            de <a href="Resurse/Booktree.ng_The-Coffee-Recipe-Book.pdf" class="content" target="_blank" download>aici</a>!</p>
+                                    </div>
+                                </li>
+                                <li>Curiozitati despre cafea
+                                    <br>
+                                    <br>
+                                        <div class="iframe-container">
+                                                <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/LfSM6MObN_w" 
+                                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <br>
+                                                <div class="taburi-iframe">
+                                                <a href="https://www.youtube.com/embed/LfSM6MObN_w" target="ifr-video">Curiozitati</a>
+                                                <a href="https://www.youtube.com/embed/0cDrbf2GNhk" target="ifr-video">Mituri</a><br/>
+                                                 </div> 
+                                        </div>
+                                </li>
+                                <li>Beneficiile ceaiului verde</li>
+                                <li>Recomandarile noastre
+                                    <section>
+                                        <p>Mai jos aveti cateva dintre recomandarile noastre pentru amatorii de sucuri naturale:</p>
+                                        <ol>
+                                            <li><a href="https://www.profructta.ro/" target="_blank">Profructta</a></li>
+                                            <li><a href="https://www.bunatatiromanesti.ro/produse/bunatati-bio/sucuri-naturale-bio/" target="_blank">Bunatati romanesti</a></li>
+                                        </ol>
+                                    </section>
+                                </li>
+                                <li>Galerie
+                                    
+                                </li>
+                            </ol>
+                    </section>
+                    <div class="duotone-image">
+                    <figure id="fig2"> 
+                        <picture>
+                            <source media="(max-width: 400px)" srcset="./Resurse/cafea1.jpg">
+                            <source media="(max-width: 600px)" srcset="./Resurse/cafea1.jpg">
+                            <source media="(max-width: 800px)" srcset="./Resurse/cafea1.jpg">
+                            <img src="./Resurse/cafea1.jpg" alt="imagine-prezentare" title="Imagine prezentare">
+                        </picture>
+                    </figure>
+                    </div>
+                    <section id="cafeaua-casei"> 
+                        <h3>Cafeaua casei</h3>
+                        <p>Ne bucuram sa va prezentam cafeaua noastra, mixurile noastre dezvoltate special pentru dumneavoastra:</p>
+                        <div class="table-container">
+                            <table>
+                                <caption>Cafea de origine</caption>
+                                <thead>
+                                <tr>
+                                    <th>Origine</th>
+                                    <th>Descriere</th>
+                                    <th>Aroma</th>
+                                    <th>Pret/kg</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Colombia</td>
+                                    <td>O cafea clasica, arome usoare si ecilibrate.</td>
+                                    <td>Ciocolata, caramel</td>
+                                    <td>59.99 RON</td>
+                                </tr>
+                                <tr>
+                                    <td>Ethiopia</td>
+                                    <td>O cafea aromata, perfecta pentru a fi savurata in natura.</td>
+                                    <td>Note florale, fructate</td>
+                                    <td>74.99 RON</td>
+                                </tr>
+                                <tr>
+                                    <td>Guatemala</td>
+                                    <td>O cafea bogata in arome ce se deosebeste prin gustul sau condimentat.</td>
+                                    <td>Ciocolata, scortisoara</td>
+                                    <td>69.99 RON</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section id="program">
+                        <h3>Program</h3>
+                            <p>Operatorii nostri va stau la dispozitie la telefon sau pe email de <b>luni pana vineri intre orele 9 si 17.</b></p>
+                    </section>
+                    <section id="newsletter">
+                        <h3>Newsletter</h3>
+                            <p>Vrei sa primesti pe mail cele mai cool oferte? Lasa-ne adresa ta!</p>
+                    </section>
+                </div>
+            </section>
+        
+            <section id="produse">
+                <h2>Cafea</h2>
+                <section id="toate">
+                    <h3>Toate produsele</h3>
+                    
+                </section>
+                    <section id="cafea-boabe">
+                        <h3>Cafea boabe</h3>
+                    </section>
+                    <section id="ceai">
+                        <h3>Ceaiuri</h3>
+                    </section>
+                    
+            </section>
+            <section id="origine">
+                <h2>Originea produselor noastre</h2>
+                <section id="etiopia">
+                    <h3>Cafeaua ce provine din Etiopia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consectetur eligendi minima provident odit aliquid id repudiandae harum, quidem eaque laborum labore architecto ex exercitationem aut magnam eos reprehenderit est.</p>
+                </section>
+                <section id="brazilia">
+                    <h3>Brazilia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et sunt iure minima iste hic voluptate quidem rem debitis iusto cupiditate, temporibus nulla minus ab eos. Sunt fugit eius ad!</p>
+                </section>
+                    
+            </section>
+            <section id="galerie-statica">
+                <h2>Galerie</h2>
+                <div id="grid-galerie">
+                    <% let k = 0 %>
+                    <% let count = 0; %>
+                    <% for (let imag of locals.imagini) { %>
+                            <% if(k==4 || k==7) { %>
+                               <div id="gap-element"></div> 
+                            <%  }  else {  %> 
+                            <div id="grid-item">
+                            <figure>
+                                <picture>
+                                    <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
+                                    <img src="<%- imag.fisier %>" alt="imagine">
+                                </picture>
+                                <figcaption><%- imag.descriere %></figcaption>
+                            </figure>
+                            </div>
+                            <%  }  %>  
+                            <%  k = k+1  %>  
+                    
+                
+                    <% }   %>
+                    
+                </div>
+                
+            </section>
+            
+            <section id="faq">
+                <h2>FAQ</h2>
+                    <p>Daca intrebarile dumneavoastra nu se gasesc in sectiunea noastra de
+                        <abbr title="Frequently Asked Questions">FAQ</abbr>, va rugam sa ne lasati un mesaj in sectiunea de
+                        <a href="#contact">contact</a>.
+                    </p>
+                    <ol>
+                        <li>
+                            <p>Q: Cat timp dureaza sa livrati coletele?</p>
+                            <p>R: In Bucuresti livram in 3 zile lucratoare, iar in restul oraselor in 4-6 zile lucratoare.</p>
+                        </li>
+                        <div class="balloons">
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                            <div class="balloon"></div>
+                        </div>
+                        <li>
+                            <p>Q: Ce politica de retur aveti?</p>
+                            <p>R: Produsele se pot returna in maxim 15 zile de la livrare. Taxa de livrare nu se returneaza.</p>
+                        </li>
+                    </ol>
+            </section>   
+            <section id="contact">
+                <h2>Contact</h2>
+            </section>  
+            <div class="back-to-top">
+                <a href="#top">
+                  <div class="triangle"></div>
+                </a>
+            </div>
+            
+                          
+        </main>
+        <% include("../Fragmente/Footer.ejs")  %>
+    </body>
+</html>
+

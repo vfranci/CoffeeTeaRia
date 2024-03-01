@@ -1,0 +1,88 @@
+main{
+    padding-left:var(--spatiere-pagina);
+    padding-right:var(--spatiere-pagina);
+}
+
+.martian .val-specie{
+    color:red;
+}
+.grid-produse{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 4px;
+    grid-column-gap: 8px;
+}
+.grid-produse .extraterestru{
+    border-radius: 2rem;
+    box-shadow: 0px 0px 0.8rem 0.3rem grey;
+    overflow: hidden;
+}
+
+.extraterestru:nth-child(6n+1),.extraterestru:nth-child(6n+3){
+    background-color: green;
+} 
+.extraterestru:nth-child(6n+2){
+    background-color: white;
+} 
+.extraterestru:nth-child(6n+4),.extraterestru:nth-child(6n+5),.extraterestru:nth-child(6n){
+    background-color: purple;
+} 
+
+ul.planete{
+    background-color: transparent;
+    transition: background-color 1.5s ease;
+}
+
+ul.planete:hover li:nth-child(even) {
+    /* Adaugă aici stilurile pentru elementele de pe poziții pare */
+    background-color: lightblue;
+  }
+
+.grid-produse .produs h3{
+    background-color: var(--culoare-fundal);
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.grid-produse .produs h3 a{
+    color:black;
+}
+.grid-produse .produs h3 a:hover{
+    color:white;
+}
+.grid-produse .produs figure{
+    text-align: center;
+}
+.grid-produse .produs figure img{
+    border:1px solid grey
+}
+.grid-produse .produs .info-prod{
+    display:flex;
+    background-color: brown;
+}
+.grid-produse .produs .info-prod p{
+    width:30%;
+    text-align:center;
+    font-weight:bold;
+}
+
+.grid-produse .produs p.categorie{
+
+    text-align:center;
+    font-weight:bold;
+}
+
+@media screen and (max-width:1000px) {
+    .grid-produse{
+        grid-template-columns: 1fr 1fr;  /*repeat(4,1fr)*/
+    }
+    .extraterestru:nth-child(n){
+        background-color: white !important;
+    } 
+    ul.planete li{
+        background-color: transparent !important;
+    }
+
+}

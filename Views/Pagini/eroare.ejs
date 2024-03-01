@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="description" content="Magazinul CoffeeTeaRia ofer">
+        <meta name="keywords" content="cafea, ceai, magazin, shop, coffee, tea, store, magazin online, cafenea, București, CoffeeTeaRia">
+        <title>CoffeeTeaRia - Eroare</title>
+        <link rel="stylesheet" type="text/css" href="/Resurse/CSS/eroare.css">
+        <%- include("../Fragmente/head.ejs")  %>
+        
+    </head>
+
+    <body>
+        <%- include("../Fragmente/header.ejs")  %>
+        <main>   
+            <div id="err-coloane">
+                <div id="err-imag">
+                    <img src="<%- locals.imagine %>" />
+                </div>
+                <section>
+                    <h2><%- locals.titlu %></h2>
+                    <p><%- locals.text %></p>
+                </section>
+            </div>
+        </main>
+        
+        <%- include("../Fragmente/footer.ejs");  %> 
+    
+    
+        </body>
+    </html>

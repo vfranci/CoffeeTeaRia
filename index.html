@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta charset="UTF-8"><!--codificarea in memorie a caracterelor-->
+        <meta name="description" content="Magazinul CoffeeTeaRia ofera o selectie inedita de cafele sau ceaiuri."><!--textul de sub link la cautare-->
+        <meta name="keywords" content="cafea, ceai, magazin, coffee, tea, magazin online, cafenea, București, CoffeeTeaRia">
+        <title>CoffeeTeaRia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--nu zoomeaza pe ecran mic; ne lasa sa vedem media query -->
+        <meta name="author" content="Francesca Vlaicu">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="Resurse/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Resurse/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Resurse/favicon-16x16.png">
+        <link rel="manifest" href="Resurse/site.webmanifest">
+        <link rel="mask-icon" href="Resurse/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c"><!--backg color pt windows 8 si 10-->
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="Resurse/CSS/print.css" type="text/css" media="print">
+        <script src="https://kit.fontawesome.com/07aca07948.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Resurse/CSS/general.css" type="text/css" />
+        <link rel="stylesheet" href="Resurse/CSS/general_medium.css" type="text/css" media="screen and (max-width:1000px)" /> <!--media query e ultimul ca sa nu se suprascrie-->
+        <link rel="stylesheet" href="Resurse/CSS/general_small.css" type="text/css" media="screen and (max-width:700px)" /> <!--are probleme-->
+        <link rel="stylesheet" href="Resurse/CSS/nav.css" type="text/css" />
+        <link rel="stylesheet" href="Resurse/CSS/nav_medium.css" type="text/css" media="screen and (max-width:1000px)"/>
+        <link rel="stylesheet" href="Resurse/CSS/nav_small.css" type="text/css" media="screen and (max-width:700px)"/>
+        
+    </head>
+
+    <body>
+        <header class="header" id="h1">
+            <span class="icon"><i class="fa-solid fa-mug-hot"></i></span>
+            <h1 style="font-size: 60px;"> CoffeeTeaRia </h1>
+        </header>
+             <!--meniu-->
+             <nav>
+                <label id="hamburger" for="ch-menu">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </label>        
+                <input id="ch-menu" type="checkbox">
+                <ul class="meniu">
+                    <li><div id="acasa">Acasa</div><div id="acasa-mediu"><span class="fas fa-regular fa-house"></span></div>
+                        <ul>
+                            <li><a href="#despre-noi">Despre noi</a></li>
+                            <li><a href="#promotii">Promotiile luni</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#cafeaua-casei">Cafeaua casei</a></li>
+                            <li><a href="#program">Program</a></li>
+                            <li><a href="#newsletter">Newsletter</a></li>
+                        </ul>
+                    </li>
+                    <li><div>Cafea</div><!--punem div si nu link!-->
+                        <ul>
+                            <li><a href="#cafea-boabe">Cafea boabe</a></li>
+                            <li><a href="#capsule">Capsule de cafea</a></li>
+                            <li><a href="#accesorii">Accesorii</a></li>
+                        </ul>
+                    </li>
+                    <li><div>Ceai</div>
+                        <ul>
+                            <li><a href="#negru">Ceai negru</a></li>
+                            <li><a href="#verde">Ceai verde</a></li>
+                            <li><a href="#infuzii">Infuzii</a></li>
+                            <li><a href="#medicinal">Ceai medicinal</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+             </nav>
+        <main>   
+                <section id="home">
+                    <h2>Acasa</h2>
+                    <div id="grid-pagina">
+                        <figure id="fig1">
+                            <picture>
+                                <source media="(max-width: 400px)" srcset="./Resurse/cafea.jpg">
+                                <source media="(max-width: 600px)" srcset="./Resurse/cafea.jpg">
+                                <source media="(max-width: 800px)" srcset="./Resurse/cafea.jpg">
+                                <img src="./Resurse/cafea.jpg" alt="imagine-prezentare" title="Imagine prezentare"><!--alt folosim in caz ca nu se proceseaza imaginea, iar title e descriere la hover-->
+                            </picture>
+                        </figure> 
+                        <section id="despre-noi">
+                            <h3>Despre noi</h3>
+                                <p>CoffeeTeaRia ofera o selectie variata de cafea, ceaiuri si accesorii pe 
+                                    gustul fiecaruia, de la arome deosebite de cafea si pana la infuzii de ceai. Povestea noastra a incput in Bucuresti, 
+                                    insa de atunci am reusit sa ne facem accesibili in toata tara.</p>
+                        </section>
+                        <section id="promotii">
+                            
+                                <h3>Promotiile lunii
+                                <span class="promo-container">
+                                    <i class="fa-solid fa-fire fa-3x icon1"></i>
+                                </span>
+                                </h3>
+                            
+                                <p>In aceasta luna, avem promotii de pana la <s>10%</s> <ins
+                                    style="font-weight:bold; text-decoration:none;">15%</ins> la toate sortimentele 
+                                    de cafea capsule.</p><!--stergere si inserare-->
+                                <strong>Atentie! Promotia este valabila intre zilele de 1 si 25 ale luni in curs!</strong><!--text de atentionare-->
+                        </section>
+                        <section id="blog">
+                            <h3>Blog</h3>
+                                <p>Aceasta sectiune prezinta articole despre cafea si ceai. Va invitam sa ne contactati 
+                                    daca aveti alte curiozitati sau sugestii pentru blogul nostru!</p>
+                                <ol>
+                                    <li>Retete de cafea
+                                        <div>
+                                            <p>Stim ca sunteti pasionati de cafea, asa ca am selectat pentru voi o carte online cu cele 
+                                                mai bune retete de bauturi pe baza de cafea pe care le puteti pregati chiar la voi acasa! Cartea se numeste
+                                                <i>The Coffee Recipe Book</i>, scrisa de Daniel Lancaster si o puteti descarca in format pdf
+                                                de <a href="Resurse/Booktree.ng_The-Coffee-Recipe-Book.pdf" class="content" target="_blank" download>aici</a>!</p>
+                                        </div>
+                                    </li>
+                                    <li>Curiozitati despre cafea
+                                        <br>
+                                        <br>
+                                            <div class="iframe-container">
+                                                    <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/LfSM6MObN_w" 
+                                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <br>
+                                                    <div class="taburi-iframe">
+                                                    <a href="https://www.youtube.com/embed/LfSM6MObN_w" target="ifr-video">Curiozitati</a>
+                                                    <a href="https://www.youtube.com/embed/0cDrbf2GNhk" target="ifr-video">Mituri</a><br/>
+                                                     </div> 
+                                            </div>
+                                    </li>
+                                    <li>Beneficiile ceaiului verde</li>
+                                    <li>Recomandarile noastre
+                                        <section>
+                                            <p>Mai jos aveti cateva dintre recomandarile noastre pentru amatorii de sucuri naturale:</p>
+                                            <ol>
+                                                <li><a href="https://www.profructta.ro/" target="_blank">Profructta</a></li>
+                                                <li><a href="https://www.bunatatiromanesti.ro/produse/bunatati-bio/sucuri-naturale-bio/" target="_blank">Bunatati romanesti</a></li>
+                                            </ol>
+                                        </section>
+                                    </li>
+                                </ol>
+                        </section>
+                        <figure id="fig2"> 
+                            <picture>
+                                <source media="(max-width: 400px)" srcset="./Resurse/cafea1.jpg">
+                                <source media="(max-width: 600px)" srcset="./Resurse/cafea1.jpg">
+                                <source media="(max-width: 800px)" srcset="./Resurse/cafea1.jpg">
+                                <img src="./Resurse/cafea1.jpg" alt="imagine-prezentare" title="Imagine prezentare">
+                            </picture>
+                        </figure>
+                        <section id="cafeaua-casei"> 
+                            <h3>Cafeaua casei</h3>
+                            <p>Ne bucuram sa va prezentam cafeaua noastra, mixurile noastre dezvoltate special pentru dumneavoastra:</p>
+                            <div class="table-container">
+                                <table>
+                                    <caption>Cafea de origine</caption>
+                                    <thead>
+                                    <tr>
+                                        <th>Origine</th>
+                                        <th>Descriere</th>
+                                        <th>Aroma</th>
+                                        <th>Pret/kg</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Colombia</td>
+                                        <td>O cafea clasica, arome usoare si echilibrate.</td>
+                                        <td>Ciocolata, caramel</td>
+                                        <td>59.99 RON</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ethiopia</td>
+                                        <td>O cafea aromata, perfecta pentru a fi savurata in natura.</td>
+                                        <td>Note florale, fructate</td>
+                                        <td>74.99 RON</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Guatemala</td>
+                                        <td>O cafea bogata in arome ce se deosebeste prin gustul sau condimentat.</td>
+                                        <td>Ciocolata, scortisoara</td>
+                                        <td>69.99 RON</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brazilia</td>
+                                        <td>O cafea selecta, pentru pasionati.</td>
+                                        <td>Vanilie</td>
+                                        <td>59.99 RON</td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                          <td colspan="4">Preturile pot suferi modificari in functie de sezon.</td>
+                                        </tr>
+                                      </tfoot>
+                                </table>
+                            </div>
+                        </section>
+                        <section id="program">
+                            <h3>Program</h3>
+                                <p>Operatorii nostri va stau la dispozitie la telefon sau pe email de <b>luni pana vineri intre orele 9 si 17.</b></p>
+                        </section>
+                        <section id="newsletter">
+                            <h3>Newsletter</h3>
+                                <p>Vrei sa primesti pe mail cele mai cool oferte? Lasa-ne adresa ta!</p>
+                        </section>
+                    </div>
+                </section>
+            
+                <section id="cafea">
+                    <h2>Cafea</h2>
+                        <section id="cafea-boabe">
+                            <h3>Cafea boabe</h3>
+                        </section>
+                        <section id="capsule">
+                            <h3>Capsule de cafea</h3>
+                        </section>
+                        <section id="accesorii">
+                            <h3>Accesorii</h3>
+                            <ul>
+                                <li>Aparate de cafea</li>
+                                <li>Siropuri</li>
+                            </ul>
+                        </section>
+                </section>
+                <section id="ceai">
+                    <h2>Ceai</h2>
+                        <section id="negru">
+                            <h3>Ceai negru</h3>
+                        </section>
+                        <section id="verde">
+                            <h3>Ceai verde</h3>
+                        </section>
+                        <section id="infuzii">
+                            <h3>Infuzii</h3>
+                        </section>
+                        <section id="medicinal">
+                            <h3>Ceai medicinal</h3>
+                        </section>
+                </section>
+                <section id="faq">
+                    <h2>FAQ</h2>
+                        <p>Daca intrebarile dumneavoastra nu se gasesc in sectiunea noastra de
+                            <abbr title="Frequently Asked Questions">FAQ</abbr>, va rugam sa ne lasati un mesaj in sectiunea de
+                            <a href="#contact">contact</a>.<!--pentru abrevieri; title specifica sintagma abreviata-->
+                        </p>
+                        
+                                <details><summary>Q: Cat timp dureaza sa livrati coletele?</summary> <!--textul afisabil e in summary, restul e ascuns-->
+                                <p>R: In Bucuresti livram in 3 zile lucratoare, iar in restul oraselor in 4-6 zile lucratoare.</p>
+                                </details>
+                                <details><summary>Q: Ce politica de retur aveti?</summary>
+                                    <p>R: Produsele se pot returna in maxim 15 zile de la livrare. Taxa de livrare nu se returneaza.</p>
+                                </details>               
+                </section>  
+                 
+                <section id="contact">
+                    <h2>Contact</h2>
+                </section>  
+                
+                  </div>
+                <div id="text">
+                    Un text
+                    <div id="text-reflectat">
+                      Un text
+                    </div>
+                </div>
+                                
+        </main>
+        <footer>
+            <div id="banner">
+                <p>Acesta este un proiect scolar!</p>
+            </div>
+            <div id="watermark">
+                <p>Vlaicu</p><p>Francesca</p>
+            </div>
+            <div class="back-to-top" id="my-back-to-top" title="Inapoi sus">
+                <a href="#" style="text-decoration: none;">
+                  <span class="parentheses">(</span>
+                  <span class="triangle"></span>
+                  <span class="parentheses">)</span>
+                </a>
+              </div>              
+            <a href="mailto:coffeetearia@cafea.ro"> Scrie-ne pe mail!</a><br><!--se deschide cu app de mail-->
+            <a href="https://wa.me/0722000000">Scrie-ne pe WhatsApp!</a><br>
+            <a href="tel:+40722000000"> Suna-ne! </a>
+            <address>
+                Strada Academiei nr. 1
+            </address>
+            <a href="https://goo.gl/maps/svZaJvjodCvoi2rh8">Vezi pe harta!</a><br>
+            <small>Copyright &copy;<time datetime="2023-03-05">5 martie 2023</time></small><!--small se fol pt adnotari; & se fol pentru simboluri-->
+        </footer>    
+    </body>
+</html>
+

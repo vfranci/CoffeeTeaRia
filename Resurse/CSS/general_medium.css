@@ -1,0 +1,24 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    --spatiere-pagina:30px;
+    --padding-sectiune:10px;
+}
+
+#grid-pagina > *{
+    border: 2px solid black;
+}
+ 
+#grid-pagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* repeat(2, 1fr) */
+    grid-template-areas: 
+        " z-fig1 z-fig1"
+        "z-despre-noi z-promotii"
+        "z-fig2 z-program"
+        "z-newsletter z-cafeaua-casei"
+        "z-blog z-blog";
+    
+}

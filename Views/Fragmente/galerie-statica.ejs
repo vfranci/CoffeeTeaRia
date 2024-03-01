@@ -1,0 +1,37 @@
+
+            <section id="galerie-statica">
+                <h2>Galerie</h2>
+                <div id="grid-galerie">
+                    <% let k = 0 %>
+                    <% let count = 0; %>
+                    <% for (let imag of locals.imagini) { %>
+                            <% if(k==4 || k==7) { %>
+                               <div id="gap-element"></div> 
+                            <%  }  else {  
+                            const now = new Date();
+                            const minute = now.getMinutes();
+                            const quarter = Math.floor(minute / 15);
+                            const v = ["1", "2", "3", "4"]; 
+                            if (imag.sfert_ora && imag.sfert_ora.includes(v[quarter]) && count < 10) { %>
+                            <div id="grid-item">
+                            <figure>
+                                <picture>
+                                    <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
+                                    <img src="<%- imag.fisier %>" alt="imagine">
+                                </picture>
+                                <figcaption><%- imag.descriere %></figcaption>
+                            </figure>
+                            </div>
+                            <%  }  %>  
+                            <%  k = k+1  %>  
+                    
+                
+                    <% }  } %>
+                    
+                </div>
+                
+            </section>
+  
+
+
+

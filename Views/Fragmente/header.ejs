@@ -1,0 +1,45 @@
+<header class="header" id="h1">
+    <span class="icon"><i class="fa-solid fa-mug-hot"></i></span>
+    <h1 style="font-size: 60px;"> CoffeeTeaRia </h1>
+</header>
+     <!--meniu-->
+     <nav>
+        <label id="hamburger" for="ch-menu">
+            <i class="fa-solid fa-bars fa-2x"></i>
+        </label>        
+        <input id="ch-menu" type="checkbox">
+        <ul class="meniu">
+            <li><div id="acasa">Acasa</div><div id="acasa-mediu"><i class="fa-regular fa-house-heart"></i></div>
+                <ul>
+                    <li><a href="#despre-noi">Despre noi</a></li>
+                    <li><a href="#promotii">Promotiile luni</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#cafeaua-casei">Cafeaua casei</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                    <li><a href="#galerie-statica">Galerie</a></li>
+                </ul>
+            </li>
+            <li><div>Produse</div>
+                <ul>
+                    <li><a href="/produse">Toate</a></li>
+                    <% for(let optM of locals.optiuniMeniu) { %>
+                        <li>
+                            <a href="/produse?tip=<%- optM.unnest  %>"><%= optM.unnest %></a>
+                        </li>
+                    <% } %>
+                </ul>
+            </li>
+            <li><div>Origine</div>
+                <ul>
+                    <li><a href="#etiopia">Etiopia</a></li>
+                    <li><a href="#brazilia">Brazilia</a></li>
+                    
+                    
+                </ul>
+                
+            </li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     </nav>

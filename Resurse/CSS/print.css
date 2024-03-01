@@ -1,0 +1,105 @@
+@media print {
+    
+    body::before {
+        content: ""; /*adauga conținut suplimentar în interiorul pseudo-elementelor*/
+        display: block;
+        height: 50px;  
+      }
+      
+
+    #banner{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50vw;
+        border: 6px double black;
+        padding: 10px;
+        text-align: right;
+        font-size: 1.2em;
+        
+        
+    }
+
+    nav *{
+        all: unset !important;
+    }
+
+
+    .table-container {
+        font-size: 65%;
+      }
+
+    .container-iframe {
+        display: none;
+    }
+
+
+    .taburi-iframe, .back-to-top {
+        display: none !important;
+    }
+
+
+    img, video, iframe, figcaption {
+        display: none;
+    }
+
+    #fig2, #fig1{
+        display: none;
+    }
+
+    #grid-pagina{
+		page-break-before:always;
+		background-color: white;
+		display:block !important;
+
+    }
+
+    a {
+        color: black !important; 
+        text-decoration: none !important; 
+      }
+
+    h1 {
+        
+        text-align: center;
+      }
+
+    footer {
+        page-break-before: always;
+    }
+ 
+
+    #watermark {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 10%;
+        background-color: transparent;
+        color: black;
+        opacity: 0.3;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        display: block;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin-left: 2cm;
+        margin-right: 1cm;
+      }
+      
+      @page:right {
+        margin-left: 1cm;
+        margin-right: 2cm;
+      }
+      
+    
+
+}
+  
+ 
+  
+  

@@ -1,0 +1,56 @@
+{
+    "cale_baza": "Resurse/Erori",
+    "eroare_default":{
+        "titlu":"Eroare!",
+        "text": "A survenit o eroare.",
+        "imagine":"interzis.png"
+    },
+    "info_erori": [
+        {
+            "identificator":404,
+            "status":true,
+            "titlu":"Eroare 404",
+            "text": "Fisier lipsa!",
+            "imagine":"lupa.png"
+        },
+        {
+            "identificator":403,
+            "status":true,
+            "titlu":"Eroare 403",
+            "text": "Acces interzis!",
+            "imagine":"interzis.png"
+        },
+        {
+            "identificator":400,
+            "status":true,
+            "titlu":"Eroare 400",
+            "text": "Cerere gresita",
+            "imagine":"interzis.png"
+        },
+        
+        {
+            "identificator":1,
+            "status":false,
+            "titlu":"Site în lucru",
+            "text": "Muncim, muncim!",
+            "imagine":"interzis.png"
+        },
+        
+        {
+            "identificator":2,
+            "status":false,
+            "titlu":"Eroare baza date",
+            "text": "Reveniti mai tarziu!",
+            "imagine":"interzis.png"
+        },
+        
+        {
+            "identificator":3,
+            "status":false,
+            "titlu":"Date gresit",
+            "text": "Verificati datele",
+            "imagine":"interzis.png"
+        }
+    ]
+}
+  

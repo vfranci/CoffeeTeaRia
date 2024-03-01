@@ -1,0 +1,79 @@
+{
+	"cale_galerie":"Resurse/Galerie",
+	"imagini": [
+		{
+			"fisier":"ceai1.jpg",
+			"titlu":"Ceai1",
+			"descriere":"O cana cu ceai",
+			"sfert_ora":["1", "3"]
+			
+		},
+		{
+			"fisier":"ceai2.jpg",
+			"titlu":"Ceai2",
+			"descriere":"Frunze de ceai",
+			"sfert_ora":["1", "2"]
+		},
+		{
+			"fisier":"splash.jpg",
+			"titlu":"Cafea1",
+			"descriere":"Cafea de specialitate",
+			"sfert_ora":["1"]
+		},
+		{
+			"fisier":"ceai3.jpg",
+			"titlu":"Ceai3",
+			"descriere":"O cana cu ceai",
+			"sfert_ora":["1", "4"]
+		},
+		{
+			"fisier":"ceai3.jpg",
+			"titlu":"Ceai66",
+			"descriere":"O cana cu ceai",
+			"sfert_ora":["1", "4"]
+		},
+		{
+			"fisier":"ceai3.jpg",
+			"titlu":"Ceai9",
+			"descriere":"O cana cu ceai",
+			"sfert_ora":["1", "4"]
+		},
+		
+		{
+			"fisier":"heart.jpg",
+			"titlu":"Cafea4",
+			"descriere":"Cesti cu cafea",
+			"sfert_ora":["1", "3"]
+		},
+		{
+			"fisier":"ceai4.jpg",
+			"titlu":"Ceai5",
+			"descriere":"Ceai cu prietenii",
+			"sfert_ora":["1", "2"]
+		},
+        {
+            "fisier":"roast.jpg",
+			"titlu":"Cafea2",
+			"descriere":"Cafea de specialitate",
+			"sfert_ora":["1"]
+        },
+        {
+            "fisier":"ceai5.jpg",
+			"titlu":"Ceai6",
+			"descriere":"O cana cu ceai",
+			"sfert_ora":["1, 4"]
+        },
+        {
+            "fisier":"boabe.jpg",
+			"titlu":"Cafea3",
+			"descriere":"Cafea de specialitate",
+			"sfert_ora":["1, 2, 3"]
+        },
+        {
+            "fisier":"ceai6.jpg",
+			"titlu":"Ceai7",
+			"descriere":"O cana cu ceai",
+			"sfert_ora":["1"]
+        }
+	]
+}

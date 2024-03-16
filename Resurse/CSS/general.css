@@ -71,9 +71,11 @@ body{
   grid-area: z-cafeaua-casei;
 }
 
-#fig1{
-  grid-area: z-fig1;
+#fig1 img {
+  max-width: 100%;
+  height: auto;
 }
+
 
 #fig2{
   grid-area: z-fig2;
@@ -98,7 +100,6 @@ body{
   grid-template-columns: 1fr 1fr 1fr 1fr; /* da dimensiunile coloanelor */
   gap: 10px; /* da spatierea intre linii si coloane*/
   grid-template-areas: 
-      "z-fig1 z-fig1 z-fig1 z-fig1"
       "z-despre-noi z-promotii z-promotii z-program"
       "z-fig2 z-fig2 z-cafeaua-casei z-cafeaua-casei"
       "z-newsletter z-newsletter z-cafeaua-casei z-cafeaua-casei"
@@ -108,7 +109,7 @@ body{
 
 img{
   width:100%; 
-  max-width:400px;
+  /*max-width:400px*/;
 }
 
 h1, h2, h3{
